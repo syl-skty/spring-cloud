@@ -1,15 +1,17 @@
 spring:
   application:
     name: first-server
-
+  devtools:
+    add-properties: false
 server:
   port: 8081
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: server
+    appname: eureka-server
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone:http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://server2:8082/eureka/
