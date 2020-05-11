@@ -1,4 +1,4 @@
-package com.skty.springcloud.producder0;
+package com.skty.springcloud.producer0;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

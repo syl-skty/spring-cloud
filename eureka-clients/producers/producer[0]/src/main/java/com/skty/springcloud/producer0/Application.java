@@ -1,4 +1,4 @@
-package com.skty.springcloud.producder0;
+package com.skty.springcloud.producer0;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
