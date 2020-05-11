@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.skty.spring-cloud</groupId>
-	<artifactId>server</artifactId>
+	<artifactId>server0</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>server</name>
+	<name>server[0]</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

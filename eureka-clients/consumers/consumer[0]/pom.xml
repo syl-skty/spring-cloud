@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.skty.spring-cloud</groupId>
-    <artifactId>server1</artifactId>
+    <artifactId>consumer0</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server[1]</name>
+    <name>consumer[0]</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -30,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
