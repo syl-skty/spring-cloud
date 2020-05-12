@@ -8,7 +8,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://server:8081/eureka,http://server2:8082/eureka
+      defaultZone: http://server0:8081/eureka,http://server1:8082/eureka
     registry-fetch-interval-seconds: 3 #从注册中心获取服务列表的频率
   instance:
     lease-expiration-duration-in-seconds: 5 #告诉注册中心当收不到心跳包5秒后，将当前服务剔除

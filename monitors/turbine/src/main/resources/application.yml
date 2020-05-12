@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://server:8081/eureka/,http://server2:8082/eureka/
+      defaultZone: http://server0:8081/eureka/,http://server1:8082/eureka/
 
 turbine:
   app-config: eureka-consumer

@@ -3,5 +3,3 @@ spring:
     name: hystrix-dashboard
 server:
   port: 8080
-
-
