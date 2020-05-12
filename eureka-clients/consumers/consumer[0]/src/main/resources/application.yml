@@ -1,14 +1,23 @@
 spring:
   application:
-    name: consumer0
+    name: eureka-consumer
 server:
   port: 8090
 
 eureka:
-  instance:
-    appname: eureka-consumer
   client:
     service-url:
-      defaultZone: http://localhost:8081/eureka
+      defaultZone: http://server:8081/eureka,http://server2:8082/eureka
+    registry-fetch-interval-seconds: 3 #从注册中心获取服务列表的频率
+  instance:
+    lease-expiration-duration-in-seconds: 5 #告诉注册中心当收不到心跳包5秒后，将当前服务剔除
+    lease-renewal-interval-in-seconds: 2 #告诉服务注册中心，每2秒发送一次心跳检测
+feign:
+  hystrix:
+    enabled: true   #开启hystrix熔断器
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream #开启支持hystrix-dashboard的连接点，通过/actuator/hystrix.stream ,就可以连接（属于actuator模块的功能，开放性能监控，需要导入依赖）
