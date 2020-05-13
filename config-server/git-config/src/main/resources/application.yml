@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: git-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          search-paths:
