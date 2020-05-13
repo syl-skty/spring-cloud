@@ -6,5 +6,9 @@ spring:
     config:
       server:
         git:
-          uri:
-          search-paths:
+          uri: https://github.com/syl-skty/spring-cloud
+          search-paths: /config-file
+
+
+server:
+  port: 6060
