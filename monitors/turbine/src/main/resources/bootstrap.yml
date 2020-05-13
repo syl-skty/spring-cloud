@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: localhost:6060
+      uri: http://localhost:6060
       name: turbine
       profile: dev
       label: master

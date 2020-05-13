@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: localhost:6060
+      uri: http://localhost:6060
       name: server0
       profile: dev
       label: master

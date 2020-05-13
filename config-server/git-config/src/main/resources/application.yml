@@ -1,14 +1,16 @@
 spring:
   application:
     name: git-config-server
+  #spring.profiles.active:native  使用本地配置文件作为配置中心读取配置文件的地址
+  #spring.cloud.config.server.native.search-locations:   当使用本地配置文件作为配置加载时，可以指定加载哪个文件夹的文件地址
 
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/syl-skty/spring-cloud
-          search-paths: /config-file
-
+          uri: https://github.com/syl-skty/spring-cloud #远程git仓库的地址
+          #远程仓库的文件路径
+          search-paths: config-file/eureka-client/consumer,config-file/eureka-client/producer,config-file/eureka-server,config-file/minitor
 
 server:
   port: 6060
