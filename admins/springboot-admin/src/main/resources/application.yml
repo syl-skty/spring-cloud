@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: springboot-admin
+  security:
+    user:
+      name: root
+      password: 123456
+
+server:
+  port: 6062
+
+eureka:
+  instance:
+    health-check-url-path: /actuator/health
+  client:
+    service-url:
+      defaultZone: http://server0:8081/eureka,http://server1:8082/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

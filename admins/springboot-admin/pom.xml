@@ -7,23 +7,27 @@
         <groupId>com.skty.spring-cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-    <artifactId>server1</artifactId>
+    <artifactId>springboot-admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server[1]</name>
+    <name>springboot-admin</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
     </dependencies>
-
 </project>
