@@ -1,11 +1,6 @@
 spring:
   application:
     name: eureka-producer
-  boot:
-    admin:
-      client:
-        instance:
-          service-url: http://localhost:6062
 
 server:
   port: 7000
