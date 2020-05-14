@@ -1,6 +1,12 @@
 spring:
   application:
     name: eureka-consumer
+  boot:
+    admin:
+      client:
+        instance:
+          service-url: http://localhost:6062
+
 server:
   port: 8090
 
@@ -20,4 +26,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream #开启支持hystrix-dashboard的连接点，通过/actuator/hystrix.stream ,就可以连接（属于actuator模块的功能，开放性能监控，需要导入依赖）
+        include: * #hystrix.stream #开启支持hystrix-dashboard的连接点，通过/actuator/hystrix.stream ,就可以连接（属于actuator模块的功能，开放性能监控，需要导入依赖）
+
+
+

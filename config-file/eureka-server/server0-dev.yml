@@ -18,6 +18,3 @@ eureka:
   server:
     enable-self-preservation: false   #是否在所有已注册的client心跳总数不合格的情况下开启自动保护模式(自动保护后将不会删除已经注册的所有节点)
     eviction-interval-timer-in-ms: 2000  #设置自动注销已经关闭的节点的时间，默认关闭1分钟后进行注销
-
-
-skty.name=张三
